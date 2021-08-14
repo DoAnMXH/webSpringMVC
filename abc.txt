@@ -1,0 +1,29 @@
+xíu e tạo fake cái API giả để demo cho a chai cái postman
+oke kkoke roi á 
+oke à cái passwork của root là 12345678 nha oke 
+e cài cái postman với cái nodejs sẵn cho a chai luon nhnhascasicasi cái hồi sáng ông thầy demo sài á
+==================================================
+một api khi được đưa ra cho client sử dụng thường xuất ra theo 5 cái gì đó quên tên mẹ rồi :)) đại loại là thông qua 5 cái đó client có thể tương tác với cái data :))
+1 - GET -> CÁI NÀY LÀ LẤY DATA RA THÔNG QUA TÊN MIỀN: VD: https://192.168.1.1/8080/course/ -> chỉ lấy ra dữ liệu hoặc sửa dữ liệu không mang tính nhạy cảm :))
+2 - POST -> cái này là lấy data ra để sửa và gửi lên lại cho sever: ví dụ: https://192.168.1.1/8080/course/ cũng là đường dẫn như này luôn :)) nhưng mà cái trình duyệt bình thường sẽ không sửa gì được cả nên mình phải thông qua một thằng như là POSTMAN đó a chai :v
+	=> mặc định thằng postman sẽ gọi được hết cả get, post, put... luôn
+3 - PUT => cái này là update dữ liệu full
+4- PATCH => update 1 phần dữ liệu ch
+5 - DELETE => xóa 
+a chai hiểu sơ qua vậy đã muốn chi tiết hỏi tiếp thầy thành :v cái này hồi sáng ổng demo xong sinh ra code ở dưới đúng k xong ổn copy đúng k giờ e demo 1 cái api như ông nhưng chỉ là fake thoi cho a chai hiểu nè :v à sáng là sinh ra token gì á cái token dùng để chứng thực user thoi :v oke
+đây cái này nó sẽ fake cho mình một cái api như thầy nè 
+à là làm dữ liệu trên localhost xong tạo ở trên này luôn đúng k 
+không cái api thực chất nó là một cổng kết nối tạo ra một cái cửa để cho các ứng dụng khác tương tác được với nhau và cánh cửa đó chính là cái http://localhost:3000/posts này thông qua cái url này á
+coi như hiểu đi :)) mặc định cáiiurl này trình duyệt gọi là phương thức get nhá ;)) http://localhost:3000/posts
+ nếu muốn gọi phương thức POST thì phải thông qua thằng trung gian là post man để hỗ trợ.
+past cái url vô đây mà dùng phương thức get thì cũng như past ra trình duyệt á
+à sài bản website nó không cho connect phải cài về máy mới được
+cái api thực chất là nó chìa ra một cái url cho người khác truy cập vào đó để sử dụng database của mình thoi à :)) cái này thì hiểu hơn mà trong cái url đó nó lại cung cấp cho  người khác 5 phương thức để tương tác với dữ liệu của mình là GET POST ... đồ á tuần sau học reactjs thì thầy đóng vai là client lấy dữ liệu từ api của mình để sài :)) đù có hiểu mẹ gì đâu :))) để từ từ chứ rối 
+api là làm phía backend còn thằng front-end sẽ lấy cái api đó ra để sài thoi :v oke kie
+copy cái url nè
+dùng phương thức get để lấy dữ liệu
+thấy lấy dữ liệu như trên web chưa
+do bên Django có giao diện nữa nên trông nó đẹp mắt thoi :)) haha nói chung phải coi lại video của thầy :))) chứ cũng khó quá mà :v 
+còn dùng cái post thì bên trình duyệt không gửi được nên phải thông qua postman
+đấy mình dùng cũng là cái http://localhost:3000/posts nhưng có thể sửa hoặc tạo gửi lên lại cho server nè ;))
+dùng postman chỉ để truy vấn như vậy thoi :v vì client chưa có giao diện để tương tác nên thtoong qua thằng postman sài ké :))
