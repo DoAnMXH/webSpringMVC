@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <title>Happy - Mạng xã hội từ thiện</title>
+    <script src="https://kit.fontawesome.com/ef7e2b893b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- Thanh đầu trang -->
+        <div class="nav-left"><img class="logo" src="images/logo3.png" alt="">
+
+        </div>
+        <!-- thanh tìm kiếm -->
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+            <div>
+                <ul class="navlogo">
+                    <li>
+                        <a href="#"><img src="images/notification.png" alt="thông báo"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/inbox.png" alt="tin nhắn"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-image online" onclick="UserSettingToggle()">
+                <img src="images/profile-pic.png" alt="">
+            </div>
+
+        </div>
+        <!-- trang cá nhân thu gọn -->
+        <div class="user-settings">
+            <div class="user-profile">
+                <img src="images/profile-pic.png" alt="">
+                <a href="#">
+                    <p> Alex Carry</p>Xem trang cá nhân của bạn</a>
+            </div>
+            <div>
+                <span></span>
+            </div>
+            <hr>
+            <!-- báo cáo -->
+            <div class="user-profile">
+                <img src="images/feedback.png" alt="">
+                <div>
+                    <p> Gửi báo cáo</p>
+                    <a href="#">Giúp chúng tôi cải thiện trải nghiệm của bạn</a>
+                </div>
+            </div>
+            <hr>
+            <div class="settings-links">
+                <img src="images/setting.png" alt="" class="settings-icon">
+                <a href="#">Cài đặt & Quyền riêng tư<img src="images/arrow.png" alt=""></a>
+            </div>
+            <div class="settings-links">
+                <img src="images/logout.png" alt="" class="settings-icon">
+                <a href="#">Đăng xuất<img src="images/arrow.png" alt=""></a>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <!-- Cột bên trái -->
+        <div class="left-sidebar">
+            <div class="important-links">
+                <a href="#"><img src="images/news.png" alt="">Bảng tin</a>
+                <a href="#"><img src="images/friends.png" alt="">Bạn bè</a>
+                <a href="#"><img src="images/group.png" alt="">Đã lưu</a>
+            </div>
+            <!-- Thanh dưới trái -->
+            <!-- <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"> <img src="images/shortcut-1.png" alt="">Web Developers</a>
+                <a href="#"> <img src="images/shortcut-2.png" alt="">Web Design Course</a>
+                <a href="#"> <img src="images/shortcut-3.png" alt="">Full Stack Development</a>
+                <a href="#"> <img src="images/shortcut-4.png" alt="">Website Experts</a>
+            </div> -->
+        </div>
+
+        <!-- main-content------- -->
+
+        <div class="content-area">
+            <!-- viết bài -->
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>Full name</p>
+                        <small>@nickname</small>
+                        <!-- <small>Public <i class="fas fa-caret-down"></i></small> -->
+                    </div>
+                </div>
+
+                <div class="post-upload-textarea">
+                    <textarea name="" placeholder="Bạn đang nghĩ gì?" id="" cols="30" rows="3"></textarea>
+                    <div class="add-post-links">
+                        <!-- <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+                            <div class="form-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Chọn ảnh từ thiết bị</label>
+                                </div>
+                            </div>
+                            <div class="py-4"></div>
+                        </div> -->
+
+                        <a href="#"><img src="images/photo.png" alt=""> Ảnh/Video
+                            <!-- <input type="file" name="image" accept=".png, .jpg" capture="user"> -->
+                        </a>
+                        <a href="#"><img src="images/feeling.png" alt="">Biểu tượng cảm xúc</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Bảng tin -->
+            <div class="status-field-container write-post-container">
+                <div class="user-profile-box">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p> Alex Carry</p>
+                            <!-- <small>August 13 1999, 09.18 pm</small>(thời gian đăng) -->
+                        </div>
+                    </div>
+                    <div class="menu-option">
+                        <button class="btn btn-outline-secondary" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                        <div class="dropdown-menu">
+                            <ul style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(-95px, 0px, 0px);  list-style-type: non;" data-popper-placement="left-start">
+                                <div class="h6 dropdown-header">Tùy chọn</div>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save2" viewBox="0 0 16 16">
+                                        <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v4.5h2a.5.5 0 0 1 .354.854l-2.5 2.5a.5.5 0 0 1-.708 0l-2.5-2.5A.5.5 0 0 1 5.5 6.5h2V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+                                        </svg>Lưu bài viết</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+                                        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
+                                        </svg>Báo cáo bài viết</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- phần hashtag, like, với cmt chưa bt làm s -->
+                <div class="status-field">
+                    <p>alo alo alo <a href="#">#This_Post_is_Better!!!!</a> </p>
+                    <img src="images/feed-image-1.png" alt="">
+
+                </div>
+                <div class="post-reaction">
+                    <div class="activity-icons">
+                        <div><a href="#" class="card-link"><i class="fa fa-gittip"></i>Thích</a></div>
+                        <div><a href="#" class="card-link"><i class="fa fa-comment"></i>Bình Luận</a></div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-LoadMore" onclick="LoadMoreToggle()">Load More</button>
+        </div>
+
+        <!-- sidebar------------ -->
+        <div class="right-sidebar">
+            <div class="heading-link">
+                <h4>Tin Tức</h4>
+            </div>
+
+            <div class="events">
+                <p>
+                    <i class="fas fa-star"></i>
+                    <h6><a href="https://nhandan.vn/nhan-ai/gop-300-trieu-dong-tien-cung-dieu-giup-nguoi-ngheo-651457/" target="_blank">
+                        Góp 300 triệu đồng tiền cúng điếu giúp người nghèo</a>
+                    </h6>
+                </p>
+                <p>
+                    <i class="fas fa-star"></i>
+                    <h6><a href="https://nhandan.vn/nhan-ai/lan-toa-yeu-thuong-tu-nhung-suat-an-nghia-tinh-651782/" target="_blank">
+                        Lan tỏa yêu thương từ những suất ăn nghĩa tình</a>
+                    </h6>
+                </p>
+            </div>
+
+            <div class="heading-link">
+                <h4>Liên hệ</h4>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>Nguyễn Văn A</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>Nguyễn Văn B</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>Trần Thị C</p>
+            </div>
+        </div>
+    </div>
+    <!-- <footer id="footer">
+        <p>&copy; Copyright 2021 - Socialbook All Rights Reserved</p>
+    </footer> -->
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="function.js"></script>
+</body>
+
+</html>
